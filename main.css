@@ -6,7 +6,7 @@
 
 :root{
     --preto:#000;
-    --verdeclaro:#92b115;
+    --verdeclaro:#D8F852;
     --verdeescuro:#D8F852;
     --rosa:#fad2d5;
     --branco:#fff;
@@ -85,6 +85,31 @@
 .logo{
     margin: 0px 5px;
 }
+
+.section-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-title h3{
+    max-width: 30ch;
+    text-align: center;
+}
+
+.section-title p{
+    max-width: 40ch;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
 
 
 
