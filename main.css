@@ -65,12 +65,12 @@ box-shadow: 6px 3px 15px -6px #000000;
     background-color:var(--preto);
 }
 
-#hero .video-wrapper{
+/* #hero .video-wrapper{
 
     display: flex;
     justify-content: center;
 
-}
+} */
 
 #hero .video-title{
     display: flex;
@@ -88,7 +88,7 @@ box-shadow: 6px 3px 15px -6px #000000;
     width:fit-content;
     background-color:var(--rosa);
     padding: 3px 10px;
-    text-align: center;
+    text-align: center !important;
     color:var(--branco);
 }
 
@@ -98,15 +98,11 @@ box-shadow: 6px 3px 15px -6px #000000;
 #hero .video-under-title h5{
 
     font-family:'Grotesk65' ;  
-    /* line-height: 2rem; */
     font-size: 1.3rem;                    
-    
-    width:fit-content;
     background-color:var(--rosa);
-    /* padding: 3px 10px; */
-   
+    text-align: center;
     color:var(--branco);
-    /* outline: 1px solid red; */
+    
 }
 
 
