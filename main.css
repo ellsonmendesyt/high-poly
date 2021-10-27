@@ -8,7 +8,7 @@
     --preto:#000;
     --verdeclaro:#D8F852;
     --verdeescuro:#D8F852;
-    --rosa:#fad2d5;
+    /* --rosa:#fad2d5; */
     --branco:#fff;
 }
 
@@ -21,7 +21,11 @@
 }
 
 
-
+.img-box{
+    padding:8px 5px;
+    -webkit-box-shadow: 6px 3px 15px -6px #000000; 
+box-shadow: 6px 3px 15px -6px #000000;
+}
 
 
 
@@ -104,13 +108,36 @@
     
 }
 
+.btn-submit{
+    border: none;
+    background-color:var(--verdeclaro) !important;
+}
 
 
 
+.linha{
+    width: 94%;
+    height: 2px;
+    background-color:#484545;
+    margin-bottom: 10px;
+}
 
 
+footer a{
+    font-size: .8rem;
+}
 
-
+.navbar-line{
+    width:84%;
+    height: 2px;
+    margin: 10px auto;
+    background-color:#606c38;
+}
+.navbar-line .maior{
+    width: 85%;
+    background-color:var(--verdeclaro);
+    height: 2px;
+}
 
 
 
