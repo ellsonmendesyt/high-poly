@@ -11,6 +11,27 @@
     /* --rosa:#fad2d5; */
     --branco:#fff;
 }
+body{
+    font-family: 'Grotesk65';
+}
+
+
+@font-face {
+    font-family: 'Grotesk95';
+    src:  url('./fonts/NHaasGroteskDSPro-95Blk.woff.ttf') format('woff2'),
+          url('./fonts/NHaasGroteskDSPro-95Blk.woff.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'Grotesk75';
+    src:  url('./fonts/NHaasGroteskDSPro-75Bd.woff.ttf') format('woff2'),
+          url('./fonts/NHaasGroteskDSPro-75Bd.woff.ttf') format('woff');
+}
+@font-face {
+    font-family: 'Grotesk65';
+    src:  url('./fonts/NHaasGroteskDSPro-65Md.ttf') format('woff2'),
+          url('./fonts/NHaasGroteskDSPro-65Md.ttf') format('woff');
+}
 
 
 /* 
@@ -26,6 +47,8 @@
     -webkit-box-shadow: 6px 3px 15px -6px #000000; 
 box-shadow: 6px 3px 15px -6px #000000;
 }
+
+
 
 
 
@@ -57,6 +80,10 @@ box-shadow: 6px 3px 15px -6px #000000;
 }
 
 #hero .video-title h5{
+
+    font-family:'Grotesk75' ;  
+    line-height: 2rem;
+    font-size: 2rem;                    
     text-align: center;
     width:fit-content;
     background-color:var(--rosa);
@@ -67,16 +94,54 @@ box-shadow: 6px 3px 15px -6px #000000;
 
 
 
+
+#hero .video-under-title h5{
+
+    font-family:'Grotesk65' ;  
+    /* line-height: 2rem; */
+    font-size: 1.3rem;                    
+    
+    width:fit-content;
+    background-color:var(--rosa);
+    /* padding: 3px 10px; */
+   
+    color:var(--branco);
+    /* outline: 1px solid red; */
+}
+
+
+
+.owl-box{
+    width:200px;
+    height: 120px;
+    border: 1px solid darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 3px 6px rgba(0,0,0,0.8); 
+    
+}
+
+@media (max-width:700px){
+    .owl-box{
+     
+        margin: 0 auto;
+    }
+}
+
+
 .download-btn{
+    font-family: 'Grotesk95';
     background-color:var(--verdeclaro) !important;
     border-radius: 0;
     padding:3px 10px;
 }
 .download-btn-lg{
+    font-family: 'Grotesk95';
     background-color:var(--verdeclaro) !important;
     border-radius: 0;
     padding:15px 25px;
-    color: var(--branco);
+    color: var(--preto);
     font-size: 1.3rem;
 }
 
@@ -84,7 +149,10 @@ box-shadow: 6px 3px 15px -6px #000000;
     position:absolute;
     bottom:-90px;
 }
-
+.btn-block{
+    font-family: 'Grotesk95';
+    color: var(--preto);
+}
 
 .logo{
     margin: 0px 5px;
@@ -98,11 +166,14 @@ box-shadow: 6px 3px 15px -6px #000000;
 }
 
 .section-title h3{
+    font-family: 'Grotesk65';
     max-width: 30ch;
     text-align: center;
 }
 
+
 .section-title p{
+    font-family: 'Grotesk65';
     max-width: 40ch;
     text-align: center;
     
@@ -113,7 +184,9 @@ box-shadow: 6px 3px 15px -6px #000000;
     background-color:var(--verdeclaro) !important;
 }
 
-
+.image-galery .section-title h3{
+font-family: 'Grotesk75';
+}
 
 .linha{
     width: 94%;
@@ -141,36 +214,8 @@ footer a{
 
 
 
-
-
-/* 
-   HERO SECTION
-*/
-
-/*
-#hero{
-    background-color: var(--preto);
- 
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-   
+.links-uteis a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
 }
-
-
-
-
-
-.video-title{
-    width:fit-content;
-    background-color: var(--rosa);
-    padding: 3px 10px;
-    color:var(--branco);
-}
-
-#video-player{
-    background-color: #fff;
-    width:90vw;
-    min-height: 50px;
-}
-*/
