@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --preto:#000;
+    --verdeclaro:#92b115;
+    --verdeescuro:#D8F852;
+    --rosa:#fad2d5;
+    --branco:#fff;
+}
+
+
+/* 
+   DEBUG CLASES
+*/
+.bug{
+  outline: 1px solid lime;
+}
+
+
+
+
+
+
+.h100{
+    height: 100vh;
+    background-color:var(--preto);
+}
+
+.bg-dark{
+    background-color:var(--preto) !important;
+}
+
+#hero{
+    background-color:var(--preto);
+}
+
+#hero .video-wrapper{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+#hero .video-title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero .video-title h5{
+    text-align: center;
+    width:fit-content;
+    background-color:var(--rosa);
+    padding: 3px 10px;
+    text-align: center;
+    color:var(--branco);
+}
+
+
+
+.download-btn{
+    background-color:var(--verdeclaro) !important;
+    border-radius: 0;
+    padding:3px 10px;
+}
+.download-btn-lg{
+    background-color:var(--verdeclaro) !important;
+    border-radius: 0;
+    padding:15px 25px;
+    color: var(--branco);
+    font-size: 1.3rem;
+}
+
+.btn-bottom{
+    position:absolute;
+    bottom:-90px;
+}
+
+
+.logo{
+    margin: 0px 5px;
+}
+
+
+
+
+
+
+/* 
+   HERO SECTION
+*/
+
+/*
+#hero{
+    background-color: var(--preto);
+ 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+   
+}
+
+
+
+
+
+.video-title{
+    width:fit-content;
+    background-color: var(--rosa);
+    padding: 3px 10px;
+    color:var(--branco);
+}
+
+#video-player{
+    background-color: #fff;
+    width:90vw;
+    min-height: 50px;
+}
+*/
