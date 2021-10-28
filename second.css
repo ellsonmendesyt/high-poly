@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --preto:#000;
+    --verdeclaro:#d8f852;
+    --branco:#fff;
+    --verdeescuro:#6c7c29;
+}
+body{
+    font-family: 'Grotesk65';
+}
+
+
+@font-face {
+    font-family: 'Grotesk95';
+    src:  url('./fonts/NHaasGroteskDSPro-95Blk.woff.ttf') format('woff2'),
+          url('./fonts/NHaasGroteskDSPro-95Blk.woff.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'Grotesk75';
+    src:  url('./fonts/NHaasGroteskDSPro-75Bd.woff.ttf') format('woff2'),
+          url('./fonts/NHaasGroteskDSPro-75Bd.woff.ttf') format('woff');
+}
+@font-face {
+    font-family: 'Grotesk65';
+    src:  url('./fonts/NHaasGroteskDSPro-65Md.ttf') format('woff2'),
+          url('./fonts/NHaasGroteskDSPro-65Md.ttf') format('woff');
+}
+
+
+/* 
+BARRA DE NAVEGAÇAO
+*/
+
+.navbar{
+    background-color: var(--preto) !important;
+}
+
+
+
+/* 
+ HERO SECTION
+*/
+
+#hero {
+    background-color:var(--preto);
+    position: relative;
+}
+
+#hero .section-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#hero .section-top .top-title{
+    text-align: center;
+    font-size: 35px;
+    max-width: 35ch;
+    color:var(--branco);
+}
+
+#hero .hero-lead{
+    text-align: center;
+    font-size: 20px;
+    max-width: 35em;
+    color: var(--branco);
+}
+
+
+
+
+
+
+
+
+
+/* 
+ BOTOES
+*/
+
+.download-btn{
+    
+    background-color:var(--verdeclaro) !important;
+    border-radius: 0;
+    position:relative;
+    border-bottom: 3px solid var(--verdeescuro);
+
+}
+
+.bottom-btn{
+    position: absolute;
+    bottom:-20px;
+}
+
+
+
+
+
