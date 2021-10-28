@@ -12,6 +12,7 @@
 }
 body{
     font-family: 'Grotesk65';
+    background-color: #fff;
 }
 
 
@@ -31,6 +32,13 @@ body{
     src:  url('./fonts/NHaasGroteskDSPro-65Md.ttf') format('woff2'),
           url('./fonts/NHaasGroteskDSPro-65Md.ttf') format('woff');
 }
+
+.bug{
+    outline: 1px solid lime;
+  }
+
+
+
 
 
 /* 
@@ -72,6 +80,27 @@ BARRA DE NAVEGAÇAO
     color: var(--branco);
 }
 
+/* 
+
+FIM DA HERO SECTION
+*/
+
+
+
+/* 
+  GALERIA DE PRODUTOS
+*/
+
+#galeria-produtos{
+    /* height: 100vh; */
+    /* background-color: #ddd; */
+}
+
+#galeria-softwares{
+    height: 100vh;
+    /* background-color: royalblue; */
+}
+
 
 
 
@@ -81,23 +110,154 @@ BARRA DE NAVEGAÇAO
 
 
 /* 
- BOTOES
+ COMPONENTES COMUNS
 */
 
+.section-heading{
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+
+}
+
+.section-heading .section-title{
+    text-align: center;
+    max-width: 15em;
+    margin-bottom: 20px;
+}
+.section-heading .section-subtitle{
+    text-align: center;
+    max-width: 25em;
+}
+
+
+
+
+/* 
+
+GALERIA DE PRODUTOS
+*/
+
+.cartao{
+ outline: 1px solid #ddd;
+ max-width:90%;
+ box-shadow: 0px 0px  8px rgba(0,0,0,0.4);
+ margin:0px auto;
+}
+
+.cartao img{
+    width:100%;
+}
+
+@media (max-width:750px){
+    .cartao{
+        width:70%;
+    }
+}
+
+
+
+/* 
+ GALERIA DE SOFTWARES
+*/
+
+.card.custom-card{
+ background-color:transparent;
+ border: none;
+}
+
+.card.custom-card img{
+    width:100%;
+}
+
+
+.card.custom-card .card-body{
+    border-color: transparent !important;
+    padding: 0;
+    box-shadow: 0px 0px  8px rgba(0,0,0,0.4);
+}
+.card.custom-card .card-footer{
+    border-color: transparent !important;
+    display: flex;
+    background-color: transparent;
+    justify-content: space-between;
+    padding: 7px 0px;
+}
+
+.custom-card .card-footer a{
+ font-size: .9rem;
+}
+
+
+
+
+
+
+
+
+
+/* 
+ UTILITARIOS
+*/
+
+
+/* 
+ CORES
+*/
+
+.bg-verdeclaro{
+    background-color: var(--verdeclaro);
+    color: var(--preto);
+    transition: 0.6s ease-out;
+    border:none;
+}
+.bg-verdeclaro:hover{
+    background-color: var(--preto);
+    color: var(--verdeclaro);
+}
+
+
+.bg-preto{
+    transition: .6s;
+    background-color: var(--preto);
+    color: var(--branco);
+    border: none;
+}
+.bg-preto:hover{
+    background-color: var(--preto);
+    color: var(--verdeclaro);
+   
+}
+
+
 .download-btn{
-    
+    padding: 2px 8px;
     background-color:var(--verdeclaro) !important;
     border-radius: 0;
     position:relative;
     border-bottom: 3px solid var(--verdeescuro);
+    
 
 }
 
 .bottom-btn{
     position: absolute;
-    bottom:-20px;
+    bottom:-25px;
 }
 
+.download-btn.btn-lg{
+    padding: .5rem 1.4rem;
+}
+
+/* de tablete pra frente o botao fica maior */
+@media (min-width:900px){
+    .download-btn.btn-lg{
+        padding: .9rem 1.7rem;
+    }   
+}
 
 
 
