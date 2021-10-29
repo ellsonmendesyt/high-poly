@@ -192,6 +192,12 @@ font-family: 'Grotesk75';
     height:100%;
 }
 
+.form-control:focus {
+    border-color:var(--verdeclaro);
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+    background-color: var(--preto);
+} 
+
 .linha{
     width: 94%;
     height: 2px;

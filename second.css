@@ -97,7 +97,7 @@ FIM DA HERO SECTION
 }
 
 #galeria-softwares{
-    height: 100vh;
+    /* height: 100vh; */
     /* background-color: royalblue; */
 }
 
@@ -113,6 +113,9 @@ FIM DA HERO SECTION
  COMPONENTES COMUNS
 */
 
+
+
+
 .section-heading{
     padding-top: 3rem;
     display: flex;
@@ -120,13 +123,15 @@ FIM DA HERO SECTION
     justify-content: center;
     align-items: center;
     background-color: #fff;
-
+   font-family: "Grotesk75";
+   
 }
 
 .section-heading .section-title{
     text-align: center;
     max-width: 15em;
     margin-bottom: 20px;
+    
 }
 .section-heading .section-subtitle{
     text-align: center;
@@ -134,6 +139,10 @@ FIM DA HERO SECTION
 }
 
 
+
+.ch-30{
+    max-width:35ch;
+}
 
 
 /* 
@@ -190,6 +199,42 @@ GALERIA DE PRODUTOS
 .custom-card .card-footer a{
  font-size: .9rem;
 }
+
+
+
+/*============================= 
+   GALERIA DE BLOCOS
+===============================*/
+
+.galeria-bloco{
+    outline: 1px solid #ddd;
+    box-shadow: 0px 0px  8px rgba(0,0,0,0.4);
+    /* overflow: hidden; */
+    max-width: 90%;
+   /* margin:10px auto ; */
+    /* aspect-ratio: 4/4; */
+}
+
+.galeria-bloco img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
