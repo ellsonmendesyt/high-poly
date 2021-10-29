@@ -9,7 +9,12 @@
     --verdeclaro:#d8f852;
     --branco:#fff;
     --verdeescuro:#6c7c29;
+
+   
 }
+
+
+/* 540px	720px	960px */
 body{
     font-family: 'Grotesk65';
     background-color: #fff;
@@ -38,7 +43,12 @@ body{
   }
 
 
-
+/* de tablete pra frente o botao fica maior */
+@media (min-width:900px){
+    .download-btn.btn-lg{
+        padding: .9rem 1.7rem;
+    }   
+}
 
 
 /* 
@@ -175,6 +185,7 @@ FIM DA HERO SECTION
     text-align: center;
     max-width: 15em;
     margin-bottom: 20px;
+    font-size: 2rem;
     
 }
 .section-heading .section-subtitle{
@@ -275,6 +286,131 @@ GALERIA DE PRODUTOS
 
 
 
+/* 540px	720px	960px */
+
+
+/* 
+
+SEÇÃO DE PLANOS
+*/
+.card-basic-pack{
+    max-width:300px;
+}
+
+.card-basic-pack.pack-pro{
+    max-width:400px;
+    color: var(--branco);
+}
+
+.card-basic-pack.pack-pro{
+    background-color: var(--preto);
+}
+
+
+
+.card-basic-pack{
+    /* width:90%; */
+    margin: 20px auto;
+    box-shadow: 1px 1px 8px 3px rgba(0,0,0,0.5);
+}
+
+.card-basic-pack .card-body{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.card-basic-pack .card-header{
+    padding-top:25px ;
+    padding-bottom:0px ;
+    /* outline: 1px solid orange; */
+}
+.card-basic-pack .card-body,.card-basic-pack .card-footer,.card-basic-pack .card-header {
+    border: 0 !important;
+}
+
+.card-basic-pack .card-header, .card-basic-pack .card-footer{
+    background-color:transparent;
+}
+
+
+
+
+
+.card-basic-pack .card-title{
+    font-family: 'Grotesk95';
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.card-basic-pack .card-body p{
+    padding: 0px auto;
+    /* outline: 1px solid orange; */
+    margin: 2px auto;
+    font-size: .9rem;
+}
+
+.card-basic-pack .card-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20% 23px;
+    text-align: center;
+}
+
+.stars i{
+    font-size: 13px;
+    color:var(--verdeclaro);
+}
+.fa-check{
+    color: var(--verdeclaro);
+}
+
+.pack-price,.new-price{
+    font-family: 'Grotesk75';
+}
+
+.old-price{
+    font-family: 'Grotesk65';
+    color: lightgray;
+    font-size: .8em;
+    font-weight:lighter;
+    margin-right: 10px;
+}
+.new-price{
+    color: var(--verdeclaro);
+}
+
+.discount-box{
+    position: absolute;
+    width: 80px;
+    right: 60px;
+    top: 70px;
+}
+.discount-box img{
+    width:100%;
+}
+
+
+/*--------------------------------------- 
+ quando a tela for maior que isso
+ sobe o plano do meio e afasta do titulo
+----------------------------------------*/
+@media(min-width:764px){
+    .push-down{
+        margin-bottom:80px ;
+    }
+    .up-30{
+        position: relative;
+        top:-100px;
+        /* margin-bottom: 200px; */
+    }
+}
+
+
+
+
+
+
+
 
 
 
@@ -328,7 +464,7 @@ GALERIA DE PRODUTOS
     border-radius: 0;
     position:relative;
     border-bottom: 3px solid var(--verdeescuro);
-    
+    box-shadow: 1px 2px 4px 2px rgba(0,0,0,0.5);
 
 }
 
@@ -341,12 +477,7 @@ GALERIA DE PRODUTOS
     padding: .5rem 1.4rem;
 }
 
-/* de tablete pra frente o botao fica maior */
-@media (min-width:900px){
-    .download-btn.btn-lg{
-        padding: .9rem 1.7rem;
-    }   
-}
+
 
 
 
