@@ -406,11 +406,39 @@ SEÇÃO DE PLANOS
 }
 
 
+/* 
+ GARANTIA
+*/
 
+.garantia-7dias{
+    width:100%;
+    /* outline: 1px solid lime; */
+}
+.garantia-7dias img{
+    width: 100%;
+    height: 320px;
+    box-shadow: 1px 2px 4px 2px rgba(0,0,0,0.5);
+}
 
+.card-simple{
+    padding: 40 40px 10px 40px;
+    outline: 1px solid #ddd;
+    height: 320px;
+    overflow: hidden;
+    box-shadow: 1px 2px 4px 2px rgba(0,0,0,0.5);
+}
 
+.card-simple h5{
+    padding: 0 10px;
+    /* margin-bottom: 15px; */
+}
 
-
+.card-simple .card-footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--branco);
+    border: none;
+}
 
 
 
@@ -476,6 +504,7 @@ SEÇÃO DE PLANOS
 .download-btn.btn-lg{
     padding: .5rem 1.4rem;
 }
+
 
 
 
