@@ -426,11 +426,14 @@ SEÇÃO DE PLANOS
     height: 320px;
     overflow: hidden;
     box-shadow: 1px 2px 4px 2px rgba(0,0,0,0.5);
+    max-width: 400px;
 }
 
 .card-simple h5{
+    font-size: 1rem;
     padding: 0 10px;
     /* margin-bottom: 15px; */
+
 }
 
 .card-simple .card-footer{
@@ -484,6 +487,38 @@ SEÇÃO DE PLANOS
 }
 
 
+.formulario{
+    background-color: var(--preto);
+    padding: 40px 50px;
+}
+
+.formulario .form-control:focus {
+    border-color: var(--verdeclaro);
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+} 
+
+.formulario input, .formulario input:focus{
+    background-color: var(--preto);
+    color:var(--branco);
+    border-radius: 0;
+}
+
+
+
+
+/* 
+RODAPE
+*/
+
+footer a{
+    font-size: .8rem;
+}
+
+.footer-line{
+    border-top: 1px solid var(--preto);
+    margin-bottom: 20px;
+}
+
 
 
 
@@ -529,6 +564,14 @@ SEÇÃO DE PLANOS
     border-bottom: 3px solid var(--verdeescuro);
     box-shadow: 1px 2px 4px 2px rgba(0,0,0,0.5);
 
+}
+
+@media (max-width:400px){
+    .download-btn{
+        padding: 2px 4px;
+        font-size: .7rem;
+        font-weight: bold;
+    }
 }
 
 .bottom-btn{
