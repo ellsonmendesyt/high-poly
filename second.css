@@ -443,10 +443,45 @@ SEÇÃO DE PLANOS
 
 
 
+/* 
+ FAQU
+*/
 
 
+.pergunta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
+#faq .card{
+    border: none;
+}
+
+#faq .card-header{
+    border: none !important;
+    background-color: transparent;
+    padding-bottom: 0;
+}
+#faq .card-body{
+    border: 0;
+    border-bottom: 2px solid var(--preto);
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.resposta{
+    width: 80%;
+    
+}
+.pergunta h5{
+    font-family: 'Grotesk95';
+}
+
+.plus-sign{
+    cursor: pointer;
+}
 
 
 
