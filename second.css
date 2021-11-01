@@ -208,7 +208,7 @@ GALERIA DE PRODUTOS
 
 .cartao{
  outline: 1px solid #ddd;
- max-width:100%;
+ width:100%;
  box-shadow: 0px 0px  8px rgba(0,0,0,0.4);
  margin:0px auto;
 }
@@ -219,10 +219,14 @@ GALERIA DE PRODUTOS
 
 @media (max-width:750px){
     .cartao{
-        width:80%;
+        width:70%;
     }
 }
 
+.perto-x{
+    padding-right: 5px;
+    padding-left: 5px;
+}
 
 
 .mycard{
