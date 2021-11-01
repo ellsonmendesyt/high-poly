@@ -449,14 +449,29 @@ SEÇÃO DE PLANOS
  GARANTIA
 */
 
+.garantia-wrapper{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    /* height: 400px; */
+}
+
+
+
+.verde-claro{
+    background-color:var(--verdeclaro);
+}
 .garantia-7dias{
-    width:100%;
+    width:200px;
+    height: 200px;
+    margin: auto auto;
     /* outline: 1px solid lime; */
 }
 .garantia-7dias img{
     width: 100%;
-    height: 320px;
-    box-shadow: 1px 2px 4px 2px rgba(0,0,0,0.5);
+    /* height: 320px; */
+    /* box-shadow: 1px 2px 4px 2px rgba(0,0,0,0.5); */
 }
 
 .card-simple{
