@@ -96,12 +96,11 @@
               <div class="col-12 w-100">
                 <div class="owl-carousel p-4 owl-theme modelos3d">
 
-                    <div class="item owl-box"> <img src="./icons/autocad.png" alt=""></div>
-                    <div class="item owl-box"><img src="./icons/max.png" alt=""></div>
-                    <div class="item owl-box"><img src="./icons/lumion.png" alt=""></div>
-                    <div class="item owl-box"><img src="./icons/sketch.png" alt=""></div>
-                    <!-- <div class="item owl-box"><img src="./icons/graphsoft.png" alt=""></div> -->
-
+                    <div class="item owl-box"> <img src="./imgs/pg1-blocos/Ativo 9.png" alt=""></div>
+                    <div class="item owl-box"> <img src="./imgs/pg1-blocos/Ativo 11.png" alt=""></div>
+                    <div class="item owl-box"> <img src="./imgs/pg1-blocos/Ativo 12.png" alt=""></div>
+                    <div class="item owl-box"> <img src="./imgs/pg1-blocos/Ativo 13.png" alt=""></div>
+                    <div class="item owl-box"> <img src="./imgs/pg1-blocos/Ativo 14.png" alt=""></div>
               </div>
               </div>
           </div>
@@ -206,19 +205,19 @@
           </div>
 
           <!-- ROPAPÉ -->
-          <footer class="pb-md-3 pb-sm-2">
+          <footer class="pb-lg-3 pb-sm-2">
               <div class="row my-5">
                   <div class="linha"></div>
 
-                  <div class=" col-md-3 px-0 ">
-                    <div class="ml-sm-4 ml-lg-0 d-flex align-items-center " >
+                  <div class=" col-lg-3 px-0 ">
+                    <div class="ml-sm-4 ml-lg-0 d-flex align-items-center" >
                         <div class="logo"><img src="./imgs/factory.png" height="25" alt=""></div>
                         <div class="logo"><img src="./icons/ativo9.jpg" height="25" alt=""></div>
                         <div class="logo"><img src="./icons/ativo10.jpg" height="25" alt=""></div>
                     </div>
                   </div>
 
-                  <div class="col-md-6 links-uteis">
+                  <div class="col-lg-6 links-uteis">
                         <nav class="d-flex w-100">
                             <a class="nav-link" href="#">Política de Privacidade & Termosde Uso</a>
                             <a class="nav-link" href="#">Area de Membros</a>
@@ -244,27 +243,36 @@
 
     <script>
         $('.modelos3d').owlCarousel({
-            loop:true,
-            dots:false,
-            margin:50,
-            nav:false,
-            autoplay:true,
-            autoplayTimeout:2000,
-            autoplayHoverPause:false,
-            responsive:{
-                0:{
-                    items:1
-                },
-                700:{
-                    items:2
-                },
-                1000:{
-                    items:3
-                },
-                1400:{
-                    items:4
-                }
-            }
+ 
+            stagePadding: 10,
+    
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplayTimeout:4000,
+    autoplay:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:1.1,
+            center:true,
+        },
+        500:{
+            items:1.1,
+            center:true,
+            margin:0,
+        },
+        700:{
+            items:2.1,
+            center:true,
+            margin:10,
+        },
+        1000:{
+            items:3.1,
+            center:true,
+            margin:10,
+        }
+    }
 })
     </script>
       
