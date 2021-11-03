@@ -111,57 +111,72 @@ FIM DA HERO SECTION
    
 }
 
+
+#depoimentos .card{
+    border-radius: 0;
+    box-shadow: 0px 0px  3px 2px rgba(0,0,0,0.4);
+    
+}
+
 #galeria-softwares .card-footer a{
   flex-grow: 1;
 }
 
-#depoimentos{
-
+#depoimentos .card-footer{
+  background-color: var(--branco);
 }
 
 
-.card-depo{
-    border-radius: 0;
-    box-shadow: 1px 2px  3px 2px rgba(0,0,0,0.4);
-}
-.card-depo .card-body{
-    padding: 0;
-    overflow: hidden;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-}
+/* ====================================
+ AREA DE DEPOIMENTOS 
+=======================================*/
 
+.owl-item{
+    box-sizing: border-box;
+    /* background-color:red; */
+    padding: 10px;
 
-
-.card-depo .card-footer{
-    background-color: var(--branco);
-
+    
 }
 
-.card-depo quote{
+#depoimentos .card-body{
+    border: 0;
+}
+
+
+#depoimentos .card-footer{
+  display: flex;
+  flex-direction: column;
+}
+.depoimento{
     font-family: 'Grotesk65';
     font-weight: 400;
     font-size: .9rem;
 }
 
-.card-depo .author{
+.autor{
     font-family: 'Grotesk75';
     font-size: 1rem;
 }
 
 
-.card-depo .occupation{
+.profissao{
     font-family: 'Grotesk65';
     font-size: 14px;
-    font-weight: light;
+    font-weight: lighter;
+    margin-bottom: 0;
 }
 
-.pais{
+.bandeira{
+    display: block;
+  /* background:red; */
+  /* width: 100%; */
     width: 46px;
     height: 33px;
-    /* margin-bottom: 10px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.pais img{
+.bandeira img{
     width: 100%;
 }
 
