@@ -357,12 +357,38 @@ GALERIA DE PRODUTOS
 
 SEÇÃO DE PLANOS
 */
-.card-basic-pack{
-    max-width:300px;
+
+
+@media (max-width:768px){
+    #precos{
+        flex-direction: column;
+    }
+
+   
 }
 
+#precos{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    /* outline: 1px solid orange; */
+    margin: 0px auto;
+    /* flex-wrap: wrap; */
+   
+}
+
+
+
+#precos > *{
+    flex:0 1 500px;
+}
+
+
+
+
+
 .card-basic-pack.pack-pro{
-    max-width:400px;
+    /* max-width:400px; */
     color: var(--branco);
 }
 
@@ -374,7 +400,7 @@ SEÇÃO DE PLANOS
 
 .card-basic-pack{
     /* width:90%; */
-    margin: 20px auto;
+    /* margin: 20px auto; */
     box-shadow: 1px 1px 8px 3px rgba(0,0,0,0.5);
 }
 
@@ -445,8 +471,8 @@ SEÇÃO DE PLANOS
 
 .discount-box{
     position: absolute;
-    width: 80px;
-    right: 60px;
+    width: 70px;
+    right: 20px;
     top: 70px;
 }
 .discount-box img{
