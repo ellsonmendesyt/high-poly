@@ -18,6 +18,7 @@
 body{
     font-family: 'Grotesk65';
     background-color: #fff;
+    font-smooth: always;
 }
 
 
@@ -46,7 +47,8 @@ body{
 /* de tablete pra frente o botao fica maior */
 @media (min-width:900px){
     .download-btn.btn-lg{
-        padding: .9rem 1.7rem;
+        padding: 0px 1rem;
+        font-size: 1.5rem;
     }   
 }
 
@@ -57,8 +59,44 @@ BARRA DE NAVEGAÇAO
 
 .navbar{
     background-color: var(--preto) !important;
+    position: relative;
+  
+
 }
 
+.navbar:after{
+    content: '';
+    position: absolute;
+    width:96%;
+    height:2px;
+    bottom: 0px;
+    left: 25px;
+    background-color: var(--verdeclaro);
+    margin: 0px auto;
+}
+
+@media  (max-width:320px){
+    .navbar:after{
+        width:83%;
+    }
+}
+@media  (max-width:375px){
+    .navbar:after{
+        width:83%;
+    }
+}
+
+@media  (min-width:420px){
+    .navbar:after{
+        width:89%;
+    }
+}
+
+@media  (min-width:768px){
+    .navbar:after{
+        width:96%;
+    }
+}
 
 
 /* 
@@ -126,6 +164,14 @@ FIM DA HERO SECTION
   background-color: var(--branco);
 }
 
+#footer-line{
+
+ height: 2px;
+ width: 90%;
+ margin-bottom: 20px;
+ background-color:#ddd;
+ 
+}
 
 /* ====================================
  AREA DE DEPOIMENTOS 
@@ -359,11 +405,17 @@ SEÇÃO DE PLANOS
 */
 
 
+@media (max-width:762px){
+    .card-small {
+        max-height: 350px;
+    }
+}
+
 @media (max-width:768px){
     #precos{
         flex-direction: column;
+     
     }
-
    
 }
 
@@ -486,7 +538,7 @@ SEÇÃO DE PLANOS
 ----------------------------------------*/
 @media(min-width:764px){
     .push-down{
-        margin-bottom:80px ;
+        margin-bottom:40px ;
     }
     .up-30{
         position: relative;
@@ -514,6 +566,18 @@ SEÇÃO DE PLANOS
 
 .sombra{
     box-shadow: 1px 2px 4px 2px rgba(0,0,0,0.5);
+}
+
+.flesh-left-sm{
+    position:relative;
+    left: -13px;
+}
+
+@media (max-width:768px){
+    .flesh-left-sm{
+        position:relative;
+        left: 0px;
+    }   
 }
 
 .verde-claro{
@@ -674,7 +738,7 @@ footer a:hover{
 
 
 .download-btn{
-    padding: 2px 8px;
+    padding: 4px 10px;
     background-color:var(--verdeclaro) !important;
     border-radius: 0;
     position:relative;
@@ -699,7 +763,8 @@ footer a:hover{
 }
 
 .download-btn.btn-lg{
-    padding: .5rem 1.4rem;
+    padding: .8rem 2.4rem;
+    font-weight: bolder;
 }
 
 
