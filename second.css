@@ -67,35 +67,13 @@ BARRA DE NAVEGAÇAO
 .navbar:after{
     content: '';
     position: absolute;
-    width:96%;
+    /* width:96%; */
+    right: 15px;
     height:2px;
     bottom: 0px;
     left: 25px;
     background-color: var(--verdeclaro);
     margin: 0px auto;
-}
-
-@media  (max-width:320px){
-    .navbar:after{
-        width:83%;
-    }
-}
-@media  (max-width:375px){
-    .navbar:after{
-        width:83%;
-    }
-}
-
-@media  (min-width:420px){
-    .navbar:after{
-        width:89%;
-    }
-}
-
-@media  (min-width:768px){
-    .navbar:after{
-        width:96%;
-    }
 }
 
 
@@ -164,10 +142,13 @@ FIM DA HERO SECTION
   background-color: var(--branco);
 }
 
-#footer-line{
-
+#footer-line::before{
+ content: '';
+ position:absolute;
+ top: -20px;
  height: 2px;
- width: 90%;
+ left: 10px;
+ right: 20px;
  margin-bottom: 20px;
  background-color:#ddd;
  
